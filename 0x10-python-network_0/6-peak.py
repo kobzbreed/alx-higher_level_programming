@@ -19,7 +19,7 @@ def find_peak(list_of_integers):
             if mid_a // 2 == 0:
                 mid_a = 2
             mid = mid + mid_a // 2
-        elif (mid_a > 0 and 
+        elif (mid_a > 0 and
                 list_of_integers[mid] < list_of_integers[mid - 1]):
             if mid_a // 2 == 0:
                 mid_a == 2
