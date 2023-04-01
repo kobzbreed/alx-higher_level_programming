@@ -14,7 +14,7 @@ if __name__ == "__main__":
     letter = "" if len(sys.argv) == 1 else (sys.argv[1])
     payload = {"q": letter}
 
-    r = requests.get("http://0.0.0.0:5000/search_user", payload)
+    r = requests.post("http://0.0.0.0:5000/search_user", payload)
     try:
         response = r.json()
         if response == {}:
